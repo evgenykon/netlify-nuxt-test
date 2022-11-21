@@ -68,7 +68,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-content-placeholders.js'],
+  plugins: [
+    '~/plugins/vue-content-placeholders.js',
+    { src: '~/plugins/video.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -96,7 +99,8 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { },
+
   },
   /*
    ** Custom additions configuration
@@ -151,5 +155,12 @@ export default {
       ogHost: process.env.URL,
       ogImage: '/preview.jpg'
     }
-  }
+  },
+  //serverMiddleware: ['~/middleware/setSameOriginHeader.js'],
+  server: {
+    port: 8000
+  },
+  serverMiddleware: [
+    { path: '/', handler: '~/server-middleware/headers.js' },
+  ]
 }

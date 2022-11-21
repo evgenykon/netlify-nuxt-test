@@ -5,3 +5,8 @@ environment = { NODE_VERSION = "16.11.1", NPM_VERSION = "8.1.0" }
 
 # [[plugins]]
 # package = "netlify-plugin-subfont"
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "ALLOW-FROM=https://www.youtube.com"

@@ -7,7 +7,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "webpack": "nuxt webpack"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
   "license": "MIT",
   "dependencies": {
     "@nuxt/content": "^1.15.1",
-    "nuxt": "^2.15.8"
+    "nuxt": "^2.15.8",
+    "v-video-embed": "^1.0.8",
+    "vue-lazytube": "^1.1.1",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.1.1",
