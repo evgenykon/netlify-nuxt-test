@@ -17,10 +17,14 @@
   "license": "MIT",
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@peertube/embed-api": "^0.0.6",
+    "moment": "^2.29.4",
     "nuxt": "^2.15.8",
     "v-video-embed": "^1.0.8",
     "vue-lazytube": "^1.1.1",
-    "vue-youtube-embed": "^2.2.2"
+    "vue-timers": "^2.0.4",
+    "vue-youtube-embed": "^2.2.2",
+    "webtorrent": "^1.9.4"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.1.1",

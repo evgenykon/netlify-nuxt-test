@@ -70,7 +70,8 @@ export default {
    */
   plugins: [
     '~/plugins/vue-content-placeholders.js',
-    { src: '~/plugins/video.js', mode: 'client' }
+    { src: '~/plugins/video.js', mode: 'client' },
+    { src: '~/plugins/vuetimers.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
